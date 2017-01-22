@@ -1,0 +1,107 @@
+<ion-header>
+  <ion-navbar>
+    
+    <ion-title>{{ day }} {{ food }}</ion-title>
+  </ion-navbar>
+
+   
+</ion-header>
+
+  <ion-content >
+
+    <div padding>
+
+
+    <ion-segment  id="orderDate"[(ngModel)]="day" color="primary">
+      <ion-segment-button  value="Monday, 27 Jan"  >
+       Monday, 27 Jan
+      </ion-segment-button>
+
+      <ion-segment-button  value="Tuesday, 28 Jan">
+       Tuesday, 28 Jan
+      </ion-segment-button>
+    </ion-segment>
+
+    <ion-segment  [(ngModel)]="food" color="button">
+      <ion-segment-button  value="Lunch" >
+        Lunch
+      </ion-segment-button>
+      <ion-segment-button  value="Dinner">
+        Dinner
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="food">
+  <ion-list *ngSwitchCase="'Lunch'" (click)="foodClicked()" no-lines>
+
+  <div class="item-border">
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="images/food5.jpg">
+      </ion-thumbnail>
+      <div item-content item-left>
+      <h2 class="foodName">Italian Food - Macaroni Peperoni</h2>
+      <h2 class="price" >RM5.00 </h2>
+      <ion-badge>2x</ion-badge>
+      </div>
+    </ion-item>
+  </div>
+
+  <div class="item-border">
+    <ion-item>
+      <ion-thumbnail item-left >
+        <img src="images/food5.jpg">
+      </ion-thumbnail>      
+      <div item-content item-left>
+      <h2 class="foodName">Italian Food - Chinese Macaroni plus French Style</h2>
+      <h2 class="price" >RM5.00 </h2>
+      <ion-badge color="button" >2x</ion-badge>
+      <ion-badge color="danger" >50 packs left</ion-badge>
+      </div>
+    </ion-item>
+  </div>
+
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'Dinner'">
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="images/food6.jpg">
+      </ion-thumbnail>
+      
+      <div item-content item-left>
+      <h2 class="foodName">Chinese Food - Chicken Honey</h2>
+      <h2  class="price">RM5</h2>
+      <ion-badge color="button">2x</ion-badge>
+      </div>
+      
+    </ion-item>
+
+    <ion-item padding>
+      <ion-thumbnail item-left>
+        <img src="images/food6.jpg">
+      </ion-thumbnail>
+      
+      <div item-content item-left>
+      <h2 >Chinese Food - Chicken Honey</h2>
+      <h2 color="danger" class="price">RM5</h2>
+      <ion-badge color="button">2x</ion-badge>
+      </div>
+      
+    </ion-item>
+
+  </ion-list>
+</div>
+
+<ion-row>
+  <ion-col width-80>
+<button ion-button >Heloo</button>
+  </ion-col>
+
+  <ion-col width-20>
+<button ion-button >Heloo</button>
+  </ion-col>
+</ion-row>
+  
+</ion-content>

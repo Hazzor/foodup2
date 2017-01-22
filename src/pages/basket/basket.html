@@ -1,0 +1,161 @@
+<ion-header>
+  <ion-navbar >
+    <ion-title>
+      My Basket (4)
+    </ion-title>
+
+  
+     <ion-buttons end>
+      <button ion-button (click)="openModal()">
+        Edit
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+   
+
+</ion-header>
+
+
+<ion-content>
+
+
+  <ion-item>
+    <h2 id="basketDate" color="primary"><b>MONDAY, 27 January Lunch</b></h2>
+  </ion-item>
+
+<ion-list no-lines>
+<ion-item-divider color="light"><h2 item-left><b>Eat and Enjoy Ordering</b></h2>
+
+</ion-item-divider>
+
+
+<ion-item-sliding>
+  <ion-item>
+    <h2 item-left color="button">1x</h2>
+    <h2 item-content>Nasi Lemak Ayam Berempah</h2>
+    <h2 item-right>RM 8.50</h2>
+  </ion-item>
+  <ion-item-options side="right">
+      <button ion-button color="danger">
+        <ion-icon name="trash"></ion-icon>
+        Delete
+      </button>
+  </ion-item-options>
+
+</ion-item-sliding>
+
+<ion-item-sliding>
+  <ion-item>
+    <h2 item-left color="button">1x</h2>
+    <h2 item-content>Nasi Lemak Ayam Berempah</h2>
+    <h2 item-right>RM 8.50</h2>
+  </ion-item>
+  <ion-item-options side="right">
+      <button ion-button color="danger">
+        <ion-icon name="trash"></ion-icon>
+        Delete
+      </button>
+    </ion-item-options>
+
+</ion-item-sliding>
+
+<ion-item >
+<!--<div class="addMore">
+
+  
+      <button color="button" clear ion-button (click)="openModal()">
+        <h2>Order More Food</h2>
+      </button>
+    
+</div>-->
+  
+</ion-item>
+
+</ion-list >
+
+ <ion-item>
+    <h2  id="basketDate" color="primary"><b>MONDAY, 27 January Dinner</b></h2>
+</ion-item>
+
+<ion-list no-lines>
+<ion-item-divider color="light">
+  <h2 item-left><b>Food Up Home Taste Dinner and Lunch Ordering</b></h2>
+</ion-item-divider>
+
+<ion-item-sliding class="item-border">
+   <ion-item >
+     
+      <ion-thumbnail item-left >
+        <img src="images/food5.jpg">
+      </ion-thumbnail>      
+      
+      <div item-content item-left>
+      <h2 class="foodName">Italian Food - Chinese Macaroni plus French Style</h2>
+      
+      <ion-badge  color="button">2x</ion-badge>
+      <h2 class="price" >RM10.00 </h2>
+      
+      </div>
+      
+    </ion-item>
+
+  <ion-item-options side="right">
+      <button ion-button color="danger">
+        Delete
+      </button>
+  </ion-item-options>
+</ion-item-sliding>
+
+
+<ion-item-sliding class="item-border">
+   <ion-item padding item-text-wrap>
+      <ion-thumbnail item-left>
+        <img src="images/food5.jpg">
+      </ion-thumbnail>
+      
+      <div item-content item-left>
+      <h2 class="foodName">Italian Food - Macaroni Peperoni</h2>
+      
+      <ion-badge color="button">2x</ion-badge>
+      <h2 >RM9.00 </h2>
+      
+      
+      </div>
+      
+  </ion-item>
+
+  <ion-item-options side="right">
+      <button ion-button color="danger">
+        Delete
+      </button>
+  </ion-item-options>
+
+</ion-item-sliding>
+
+<ion-item>
+<div class="addMore">
+  
+  <button  color="button" clear ion-button (click)="openModal()">
+    <h2>Order More Food</h2>
+  </button>
+
+</div>
+</ion-item>
+
+</ion-list>
+
+
+
+
+
+
+</ion-content>
+<ion-footer >
+  
+  <ion-item no-lines id="totalPrice">  
+    <h2 item-left><b>Total</b></h2>
+    <h2 item-right><b>RM 15.00</b></h2>
+  </ion-item>
+
+</ion-footer >
