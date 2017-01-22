@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 
 import { NavController, ModalController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
+import { SignupPage } from '../signup/signup';
+import { UpdateProfilePage } from '../update-profile/update-profile';
 
 @Component({
   selector: 'page-account',
@@ -14,8 +16,15 @@ export class AccountPage {
   }
 
   profileSelected() {
+    this.navCtrl.push(UpdateProfilePage);
+  }
+
+  logoutSelected(){
+
     let login = this.modalCtrl.create(LoginPage);
     login.present();
+
+
   }
 
 }

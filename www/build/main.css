@@ -30011,3 +30011,29 @@ page-login #signUp {
   text-align: center;
   border-top: 1px solid lightgrey;
 }
+
+page-signup .buttonContainer {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+page-signup .buttonContainer .button {
+  width: 90%;
+  text-align: right;
+  font-weight: 500;
+}
+
+page-signup #spacing {
+  height: 50px;
+}
+
+page-update-profile .buttonContainer {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+page-update-profile .buttonContainer .button {
+  width: 90%;
+  text-align: right;
+  font-weight: 500;
+}
