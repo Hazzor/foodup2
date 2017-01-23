@@ -11,6 +11,13 @@ import { LocationPage } from '../pages/location/location';
 import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 import { UpdateProfilePage } from '../pages/update-profile/update-profile';
+import { ContactUsPage } from '../pages/contact-us/contact-us';
+import { AboutPage } from '../pages/about/about';
+
+//Seller Pages
+import { FoodOnSalePage } from '../pages/seller-food-on-sale/seller-food-on-sale';
+import { SellFoodPage } from '../pages/seller-sell-food/seller-sell-food';
+import { SellerStatisticPage } from '../pages/seller-statistic/seller-statistic';
 import { TabsPage } from '../pages/tabs/tabs';
 
 @NgModule({
@@ -25,7 +32,13 @@ import { TabsPage } from '../pages/tabs/tabs';
     LocationPage,
     LoginPage,
     SignupPage,
+    ContactUsPage,
+    AboutPage,
+
     UpdateProfilePage,
+    FoodOnSalePage,
+    SellFoodPage,
+    SellerStatisticPage,
     TabsPage
   ],
   imports: [
@@ -44,6 +57,12 @@ import { TabsPage } from '../pages/tabs/tabs';
     LoginPage,
     SignupPage,
     UpdateProfilePage,
+    ContactUsPage,
+    AboutPage,
+
+    FoodOnSalePage,
+    SellFoodPage,
+    SellerStatisticPage,
     TabsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
