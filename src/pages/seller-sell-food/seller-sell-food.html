@@ -7,12 +7,112 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>sell-food</ion-title>
+    <ion-title>Sell Food</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content >
+
+<ion-list>
+
+  <ion-item-divider color="light"><h2 style="font-weight:bold">Food Name</h2></ion-item-divider>
+  <ion-item>
+    <ion-input placeholder="Set A" clearInput></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input placeholder="Chicken Rice" clearInput></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <button ion-button block default>
+      <ion-icon name="image"></ion-icon> &nbsp;&nbsp;&nbsp;
+      Add Photo
+      </button>
+  </ion-item>
+
+<ion-list radio-group no-lines>
+  <ion-item-divider color="light"><h2 style="font-weight:bold">Meal</h2></ion-item-divider>
+  <ion-item>
+    <ion-label >Lunch</ion-label>
+    <ion-radio checked="true" value="lunch"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Dinner</ion-label>
+    <ion-radio value="dinner"></ion-radio>
+  </ion-item>
+</ion-list>
+
+<ion-item-divider color="light"><h2 style="font-weight:bold">Selling Date</h2></ion-item-divider>
+<ion-item>
+  <ion-label>Selling Date </ion-label>
+  <ion-datetime  displayFormat="D MMMM YYYY" pickerFormat="D MMMM YYYY" min="2017" [(ngModel)]="myDate"
+    monthNames="January, February, March, April, May, June, July, August, September, October, November, December"
+    monthShortNames = "Jan, Feb, Mar, Apr, May, June, July, Aug, Sep, Oct, Nov, Dec"
+    dayNames= "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday"
+    dayShortNames="Mon, Tue, Wed, Thurs, Fri, Sat, Sun">
+  </ion-datetime>
+</ion-item>
+
+<ion-item-divider color="light"><h2 style="font-weight:bold">Price</h2></ion-item-divider>
+  <ion-item>
+    <ion-label color="primary">RM </ion-label>
+    <ion-input placeholder="5" clearInput type="number"></ion-input>
+  </ion-item>
+
+<ion-item-divider color="light"><h2 style="font-weight:bold">Description</h2></ion-item-divider>
+  <ion-item>
+    <ion-textarea placeholder="Enter a description" clearInput></ion-textarea>
+  </ion-item>
+
+<ion-item-divider color="light"><h2 style="font-weight:bold">Order Close time</h2></ion-item-divider>
+  <ion-item>
+  <ion-label>Enter Order Close time</ion-label>
+  <ion-datetime displayFormat="h:mm A " [(ngModel)]="closeTime"></ion-datetime>
+</ion-item>
+
+<ion-item-divider color="light"><h2 style="font-weight:bold">Pickup Location and Time</h2></ion-item-divider>
+<ion-grid>
+ <ion-row >
+      <ion-item  no-lines style="margin-left:-20px;">
+
+        <ion-select mode="wp" >
+          <ion-option value="kk3" selected="true">KK3</ion-option>
+          <ion-option value="kk2">KK2</ion-option>
+          <ion-option value="kk4">KK4</ion-option>
+        </ion-select>
+        
+      </ion-item>
+      <ion-item no-lines  mode="wp" style="margin-right:-20px;">
+        
+        <ion-input  mode="wp" placeholder="6.00pm-6.30pm"></ion-input>
+      </ion-item>
+
+  </ion-row>
+   <ion-row >
+      <ion-item  no-lines style="margin-left:-20px;">
+
+        <ion-select mode="wp" >
+          <ion-option value="kk3" selected="true">Payung Putih</ion-option>
+          <ion-option value="kk2">KK2</ion-option>
+          <ion-option value="kk4">KK4</ion-option>
+        </ion-select>
+        
+      </ion-item>
+      <ion-item no-lines  mode="wp" style="margin-right:-20px;">
+        
+        <ion-input  mode="wp" placeholder="6.00pm-6.30pm"></ion-input>
+      </ion-item>
+
+  </ion-row>
+  </ion-grid>
+
+</ion-list>
+<div class="buttonContainer">
+  <button ion-button class="button" color="button">Sell Food </button>
+</div>
 
 </ion-content>

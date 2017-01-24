@@ -30045,6 +30045,17 @@ page-ordered .orderedFood {
   margin-top: 10px;
 }
 
+page-sell-food .buttonContainer {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+page-sell-food .buttonContainer .button {
+  width: 90%;
+  font-weight: 500;
+}
+
 page-signup .buttonContainer {
   text-align: center;
   padding-bottom: 15px;

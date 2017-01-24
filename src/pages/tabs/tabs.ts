@@ -4,6 +4,9 @@ import { FoodShopPage } from '../food-shop/food-shop';
 import { BasketPage } from '../basket/basket';
 import { OrderedPage } from '../ordered/ordered';
 import { AccountPage } from '../account/account';
+import { SellFoodPage } from '../seller-sell-food/seller-sell-food';
+import { FoodOnSalePage } from '../seller-food-on-sale/seller-food-on-sale';
+import { SellerStatisticPage } from '../seller-statistic/seller-statistic';
 
 
 @Component({
@@ -16,6 +19,9 @@ export class TabsPage {
   tab2Root: any = BasketPage;
   tab3Root: any = OrderedPage;
   tab4Root: any = AccountPage;
+  tab5Root: any = SellFoodPage;
+  tab6Root: any = FoodOnSalePage;
+  tab7Root: any = SellerStatisticPage;
 
   constructor() {
 

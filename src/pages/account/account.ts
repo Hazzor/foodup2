@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 
 import { NavController, ModalController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
-import { SignupPage } from '../signup/signup';
 import { UpdateProfilePage } from '../update-profile/update-profile';
 import { ContactUsPage } from '../contact-us/contact-us';
 import { AboutPage } from '../about/about';
@@ -13,8 +12,9 @@ import { AboutPage } from '../about/about';
 })
 export class AccountPage {
 
+name:any;
   constructor(public navCtrl: NavController, private modalCtrl: ModalController) {
-
+      this.name="Hester";
   }
 
   profileSelected() {
@@ -33,6 +33,10 @@ export class AccountPage {
 
   aboutSelected(){
     this.navCtrl.push(AboutPage);
+  }
+
+  onEnter(value:string){
+    this.name = value;
   }
 
 }
