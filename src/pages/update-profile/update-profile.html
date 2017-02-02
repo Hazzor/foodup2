@@ -14,7 +14,7 @@
 
 
 
-<ion-content padding>
+<ion-content >
 <ion-list>  
 
 <ion-item no-lines>
@@ -49,21 +49,23 @@
 
 <ion-list radio-group [(ngModel)]="status">
 
-<ion-item>
+<!--<ion-item>
     <h2 color="gray">Are you a seller or customer?</h2>
-  </ion-item>
-  <ion-item>
-    <ion-label>Seller</ion-label>
-    <ion-radio value="seller" checked></ion-radio>
-  </ion-item>
+  </ion-item>-->
+  
   <ion-item>
     <ion-label>Customer</ion-label>
-    <ion-radio value="customer"></ion-radio>
+    <ion-radio  value="customer"  ></ion-radio>
   </ion-item>
 
-  <div style="text-align:center">
+  <ion-item>
+    <ion-label>Seller</ion-label>
+    <ion-radio value="seller" ></ion-radio>
+  </ion-item>
+
+  <!--<div style="text-align:center">
   <ion-note>You still can purchase food using seller account</ion-note>
-  </div>
+  </div>-->
 
   
 </ion-list>
