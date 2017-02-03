@@ -7,12 +7,87 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>food-on-sale</ion-title>
-  </ion-navbar>
+    <ion-title>Food On Sale (2)</ion-title>
 
+    <ion-buttons end>
+      <button ion-button (click)="openModal()">
+        Edit
+      </button>
+  </ion-buttons>
+  </ion-navbar>
 </ion-header>
 
 
-<ion-content padding>
+<ion-content >
+<ion-item>
+    <h2  color="primary"><b>MONDAY, 27 January Lunch </b></h2>
+  </ion-item>
+<ion-list no-lines mode="md">
+  <ion-item-sliding class="item-border" >
+   <ion-item >
+     
+      <ion-thumbnail item-left >
+        <img src="images/food5.jpg">
+      </ion-thumbnail>      
+      
+      <div item-content item-left>
+      <h2 class="foodName">Italian Food - Chinese Macaroni plus French Style</h2>
+      
+      <ion-badge  color="button">2x</ion-badge>
+      <h2 class="price" >RM10.00 </h2>
+      
+      </div>
+      
+    </ion-item>
+
+  <ion-item-options side="right">
+      <button ion-button color="danger">
+        Delete
+      </button>
+  </ion-item-options>
+</ion-item-sliding>
+
+  <ion-item-sliding class="item-border" >
+   <ion-item >
+     
+      <ion-thumbnail item-left >
+        <img src="images/food5.jpg">
+      </ion-thumbnail>      
+      
+      <div item-content item-left>
+      <h2 class="foodName">Italian Food - Chinese Macaroni plus French Style</h2>
+      
+      <ion-badge  color="button">2x</ion-badge>
+      <h2 class="price" >RM10.00 </h2>
+      
+      </div>
+      
+    </ion-item>
+
+  <ion-item-options side="right">
+      <button ion-button color="danger">
+        Delete
+      </button>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+<ion-item no-lines>
+<div class="addMore">
+  
+  <button  color="button" clear ion-button >
+    <h2>Sell More Food</h2>
+  </button>
+
+</div>
+</ion-item>
 
 </ion-content>
+
+<ion-footer>
+  
+    <div class="buttonContainer">
+  <button ion-button class="button" color="button">View Real Time Orders</button>
+    </div>
+  
+</ion-footer>

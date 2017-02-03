@@ -29930,7 +29930,20 @@ sub {
   border-bottom: 1px solid lightgray;
 }
 
-page-basket .addMore {
+.buttonContainer {
+  text-align: center;
+  background-color: white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-top: 1px solid lightgray;
+}
+
+.buttonContainer .button {
+  width: 90%;
+  font-weight: 500;
+}
+
+.addMore {
   text-align: center;
 }
 
@@ -30063,18 +30076,6 @@ page-seller-statistic #statBG {
 page-seller-statistic #signUp {
   text-align: center;
   border-top: 1px solid lightgrey;
-}
-
-page-seller-statistic .buttonContainer {
-  text-align: center;
-  background-color: white;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-
-page-seller-statistic .buttonContainer .button {
-  width: 90%;
-  font-weight: 500;
 }
 
 page-signup .buttonContainer {

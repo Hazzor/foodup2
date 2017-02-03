@@ -42,7 +42,8 @@ module.exports.metadata =
     "cordova-plugin-console": "1.0.5",
     "cordova-plugin-statusbar": "2.2.1",
     "cordova-plugin-device": "1.1.4",
-    "cordova-plugin-splashscreen": "4.0.1"
+    "cordova-plugin-splashscreen": "4.0.1",
+    "cordova-plugin-crosswalk-webview": "2.3.0"
 };
 // BOTTOM OF METADATA
 });
