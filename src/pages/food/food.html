@@ -2,6 +2,13 @@
   <ion-navbar>
     
     <ion-title>{{ day }} {{ food }}</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openInfo()">
+        <ion-icon name = "information-circle"></ion-icon>
+      </button>
+  </ion-buttons>
+
   </ion-navbar>
 
    

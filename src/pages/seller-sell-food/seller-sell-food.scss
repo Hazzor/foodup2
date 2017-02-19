@@ -1,17 +1,34 @@
 page-sell-food {
 
-.buttonContainer{
+.button-container-seller{
 
     text-align:center;
-    padding-top:15px;
     padding-bottom:15px;
     
 
     .button{
-    width:90%;
+    width:60%;
     font-weight:500;
-
 }
 }
 
+#pickUp {
+    border-top : 1px solid lightgray;
+}
+
+.alert{
+     ion-card-content{
+    background: #E61919;
+
+    h3{
+        color:white;
+    }
+}
+}
+
+#add-pickup {
+    text-align: center;
+    margin-top:-5px;
+
+}
 }

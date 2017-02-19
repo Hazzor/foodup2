@@ -15,6 +15,7 @@ $font-path: "../assets/fonts";
 
 
 
+
 // Named Color Variables
 // --------------------------------------------------
 // Named colors makes it easy to reuse colors on various components.
@@ -32,12 +33,25 @@ $colors: (
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222,
-  button :  	#32cd32,
-  gray : #696969,
-  facebook : #3b5998
+  button :  	#32bd32, 
+  gray :      #696969,
+  facebook :  #3b5998,
+  white : #ffffff
 );
+// 32cd32 ori
+// 39c939
+// 33B433
 
-$toolbar-text-color : white;
+// 32bd32
+
+
+// $segment-button-md-padding :-5px;
+$segment-button-md-line-height : 5.0rem;
+// $segment-button-md-height: 4.5rem;
+$toolbar-background :  color($colors, primary);
+// $toolbar-height : 4rem;
+// $toolbar-background :  color($colors, facebook);
+
 
 
 // Original Color
@@ -68,11 +82,13 @@ $toolbar-md-button-color: white;
 
 
 
+
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here
 $item-wp-detail-push-show: true;
 $toolbar-wp-button-color: white;
+// $toolbar-wp-title-text-color : black;
 
 
 
@@ -93,6 +109,7 @@ $toolbar-wp-button-color: white;
 // http://ionicframework.com/docs/v2/ionicons/
 
 @import "ionicons";
+// @import "node_modules/ionicons/dist/scss/ionicons.scss";
 
 
 // Fonts

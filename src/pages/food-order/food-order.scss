@@ -4,11 +4,9 @@ page-food-order {
 img {
     max-width: 100%;
     
+    
 }
 
-.quantity{
-    text-align: center;
-}
 
 ion-list{
     padding-top:0px;
@@ -42,6 +40,10 @@ ion-list{
 
 .description{
     padding: 10px 0;
+}
+
+.quantity {
+    text-align:center;
 }
 
 

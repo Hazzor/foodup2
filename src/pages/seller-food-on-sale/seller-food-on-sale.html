@@ -10,7 +10,7 @@
     <ion-title>Food On Sale (2)</ion-title>
 
     <ion-buttons end>
-      <button ion-button (click)="openModal()">
+      <button ion-button (click)="open()">
         Edit
       </button>
   </ion-buttons>
@@ -22,9 +22,10 @@
 <ion-item>
     <h2  color="primary"><b>MONDAY, 27 January Lunch </b></h2>
   </ion-item>
+  
 <ion-list no-lines mode="md">
-  <ion-item-sliding class="item-border" >
-   <ion-item >
+  <ion-item-sliding class="multi-files" #slidingItem class="item-border" >
+   <ion-item #item>
      
       <ion-thumbnail item-left >
         <img src="images/food5.jpg">
@@ -47,8 +48,8 @@
   </ion-item-options>
 </ion-item-sliding>
 
-  <ion-item-sliding class="item-border" >
-   <ion-item >
+  <ion-item-sliding class="multi-files" #slidingItem class="item-border" >
+   <ion-item #item >
      
       <ion-thumbnail item-left >
         <img src="images/food5.jpg">
@@ -80,14 +81,18 @@
   </button>
 
 </div>
+
+<ion-input type="text"></ion-input>
 </ion-item>
+
+<ion-input type="text"></ion-input>
 
 </ion-content>
 
-<ion-footer>
+<ion-footer keyboard-attach>
   
     <div class="buttonContainer">
-  <button ion-button class="button" color="button">View Real Time Orders</button>
+  <button ion-button class="button" round color="button" mode="ios">View Real Time Orders</button>
     </div>
   
 </ion-footer>

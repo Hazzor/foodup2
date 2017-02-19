@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { SellerNamelistPage } from '../seller-namelist/seller-namelist';
 
 /*
   Generated class for the SellerStatistic page.
@@ -17,6 +18,11 @@ export class SellerStatisticPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SellerStatisticPage');
+  }
+
+  openNameList(){
+    this.navCtrl.push(SellerNamelistPage);
+
   }
 
 }

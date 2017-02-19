@@ -19,6 +19,10 @@ import { AboutPage } from '../pages/about/about';
 import { FoodOnSalePage } from '../pages/seller-food-on-sale/seller-food-on-sale';
 import { SellFoodPage } from '../pages/seller-sell-food/seller-sell-food';
 import { SellerStatisticPage } from '../pages/seller-statistic/seller-statistic';
+import { SellerNamelistPage } from '../pages/seller-namelist/seller-namelist';
+
+import { SellerInfosPage } from '../pages/seller-infos/seller-infos';
+import { ViewSellerInfoPage } from '../pages/view-seller-info/view-seller-info';
 import { TabsPage } from '../pages/tabs/tabs';
 
 @NgModule({
@@ -40,6 +44,9 @@ import { TabsPage } from '../pages/tabs/tabs';
     FoodOnSalePage,
     SellFoodPage,
     SellerStatisticPage,
+    SellerNamelistPage,
+    SellerInfosPage,
+    ViewSellerInfoPage,
     TabsPage
   ],
   imports: [
@@ -64,6 +71,9 @@ import { TabsPage } from '../pages/tabs/tabs';
     FoodOnSalePage,
     SellFoodPage,
     SellerStatisticPage,
+    SellerNamelistPage,
+    SellerInfosPage,
+    ViewSellerInfoPage,
     TabsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]

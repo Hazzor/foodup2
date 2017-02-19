@@ -1,0 +1,40 @@
+.md{
+page-seller-namelist {
+
+    
+        #locationToolbar{
+            margin-top: -20px; 
+            z-index:-999;
+
+         
+                ion-segment-button{
+                 margin-bottom:-15px;
+            }
+
+        }
+
+.item-left2 {
+    width : 50%;
+    // margin : 0;
+}
+
+.item-right2 {
+    // width : 60%;
+    // margin-left:-150px;
+    text-align:left;
+    // text-justify: tr
+    // margin : 0;
+}
+
+.item-most-left{
+    width:8%;
+}
+
+.quantity {
+    background: green;
+    padding: 5px;
+}
+
+
+    }
+}

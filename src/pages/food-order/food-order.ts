@@ -13,7 +13,7 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class FoodOrderPage {
 
-quantity
+quantity : number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.quantity = 1;

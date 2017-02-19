@@ -4,6 +4,8 @@ import { NavController, ModalController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
 import { UpdateProfilePage } from '../update-profile/update-profile';
 import { ContactUsPage } from '../contact-us/contact-us';
+// import { ViewSellerInfoPage } from '../view-seller-info/view-seller-info';
+import { SellerInfosPage } from '../seller-infos/seller-infos';
 import { AboutPage } from '../about/about';
 
 @Component({
@@ -19,6 +21,10 @@ name:any;
 
   profileSelected() {
     this.navCtrl.push(UpdateProfilePage);
+  }
+
+  sellerProfileSelected(){
+    this.navCtrl.push(SellerInfosPage);
   }
 
   logoutSelected(){

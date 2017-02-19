@@ -1,0 +1,171 @@
+<!--
+  Generated template for the SellerNamelist page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Buyer Namelist</ion-title>
+  </ion-navbar>
+
+    <ion-toolbar>
+   
+
+    <ion-searchbar   (ionInput)="getItems($event)"></ion-searchbar>
+
+  </ion-toolbar>
+
+  <ion-toolbar color="white" id="locationToolbar">
+
+     <ion-segment color="primary">
+      <ion-segment-button value="new" >
+        KK4
+      </ion-segment-button >
+      <ion-segment-button value="hot">
+        Payung Putih
+      </ion-segment-button>
+      <ion-segment-button value="ho1t" >
+        KK2
+      </ion-segment-button>
+      <ion-segment-button value="ho2t" >
+        KK2
+      </ion-segment-button>
+    </ion-segment>
+
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content >
+
+  <ion-list >
+
+    <ion-item-sliding no-lines   class="item-border">
+
+    <ion-item  >
+
+      <div item-left class="item-most-left">
+        <h2 color="gray">1. </h2>
+      </div>
+
+      <div item-left class="item-left2"> 
+        
+      <h2>Hester Lee Chong</h2>
+      <p>0138299173</p>
+      </div>
+
+      <div item-right class="item-right2"> 
+      
+      <!--<h3 item-right style="background:green; padding:5px; border-radius:5px; color:white; margin:5px"> 1A : more rice, less vege </h3>
+      <h3 item-right style="background:green; padding:5px; border-radius:5px; color:white; margin:5px"> 2A </h3>-->
+      <p ><b> 1A </b>: more rice </p>
+      <p ><b> 2A </b>: more vege </p>
+      <p ><b> 3A </b>: less rice </p>
+      
+
+      <!--<div class="quantity">
+        <p text-wrap>2A : less rice, more vege</p>
+      </div>-->
+
+      <!--<ion-badge item-content color="button" >2A : less rice, more vege</ion-badge>-->
+      <!--<ion-badge color="button" >2A</ion-badge>-->
+     <!--<p>less rice . more vege </p>-->
+      <p color="danger">I want to add soup please</p>
+      </div>
+    </ion-item>
+
+    <ion-item-options side="right">
+      <button ion-button color="primary">
+        <ion-icon name="text"></ion-icon>
+        Paid
+      </button>
+      <button ion-button color="secondary">
+        <ion-icon name="call"></ion-icon>
+        Cancel
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+
+
+
+
+
+
+
+
+
+   <ion-item-sliding no-lines   class="item-border">
+
+    <ion-item  >
+
+      <div item-left class="item-most-left">
+        <h2 color="gray">2. </h2>
+      </div>
+
+      <div item-left class="item-left2"> 
+        
+      <h2>Hester Lee Chong</h2>
+      <p>0138299173</p>
+      </div>
+
+      <div item-right class="item-right2"> 
+      <p ><b> 1A </b>: more rice </p>
+      <p ><b> 2A </b>: more vege </p>
+      <p ><b> 3A </b> </p>
+      </div>
+    </ion-item>
+
+    <ion-item-options side="right">
+      <button ion-button color="primary">
+        <ion-icon name="text"></ion-icon>
+        Paid
+      </button>
+      <button ion-button color="secondary">
+        <ion-icon name="call"></ion-icon>
+        Cancel
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+
+
+   <ion-item-sliding no-lines   class="item-border">
+
+    <ion-item  >
+
+      <div item-left class="item-most-left">
+        <h2 color="gray">2. </h2>
+      </div>
+
+      <div item-left class="item-left2"> 
+        
+      <h2>Hester Lee Chong</h2>
+      <p>0138299173</p>
+      </div>
+
+      <div item-right class="item-right2"> 
+      <!--<p ><b> 1A </b>: more rice </p>-->
+      <p ><b> 3A </b> </p>
+      <p ><b> 1A </b> </p>
+      </div>
+    </ion-item>
+
+    <ion-item-options side="right">
+      <button ion-button color="primary">
+        <ion-icon name="text"></ion-icon>
+        Paid
+      </button>
+      <button ion-button color="secondary">
+        <ion-icon name="call"></ion-icon>
+        Cancel
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  
+
+  </ion-list>
+
+</ion-content>

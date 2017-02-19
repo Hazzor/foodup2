@@ -27,10 +27,14 @@
   </ion-item>
 
   <ion-item>
-    <button ion-button block default>
+    <button ion-button block default (click)="takePhoto()">
       <ion-icon name="image"></ion-icon> &nbsp;&nbsp;&nbsp;
       Add Photo
       </button>
+  </ion-item>
+
+  <ion-item>    
+    <img [src]="base64Image" *ngIf="base64Image" />
   </ion-item>
 
 <ion-list radio-group no-lines>
@@ -74,7 +78,17 @@
   <ion-datetime displayFormat="h:mm A " [(ngModel)]="closeTime"></ion-datetime>
 </ion-item>
 
-<ion-item-divider color="light"><h2 style="font-weight:bold">Pickup Location and Time</h2></ion-item-divider>
+
+<!--===============================Changes start from here===================================-->
+<ion-list no-lines>
+  <ion-item-divider color="light"><h2 style="font-weight:bold">Pickup Location</h2></ion-item-divider>
+  <ion-item *ngFor = "let location of locations;">
+    <ion-label >{{ location.venue }}</ion-label>
+    <ion-checkbox  ng-model= " location.venue " checked="{{location.checked}}"></ion-checkbox>
+  </ion-item>
+</ion-list>
+
+<!--<ion-item-divider color="light"><h2 style="font-weight:bold">Pickup Location and Time</h2></ion-item-divider>
 <ion-grid>
  <ion-row >
       <ion-item  no-lines style="margin-left:-20px;">
@@ -108,11 +122,52 @@
       </ion-item>
 
   </ion-row>
-  </ion-grid>
+  </ion-grid>-->
 
+<!---========================Add pickup dropdown button=====================-->
+<ion-item no-lines>
+<div id="add-pickup">
+  <button (click)="addPickupLocation()" color="button" clear ion-button >
+    <h2>Add pickup location</h2>&nbsp; &nbsp; &nbsp; &nbsp; <ion-icon [name]="Icon"></ion-icon>
+  </button>
+  
+</div>
+</ion-item>
+
+<!---========================Add pickup textbox=====================-->
+<div *ngIf="addPickup" id="pickUp">
+<ion-item mode="wp" no-lines>
+  <ion-input mode="wp" [(ngModel)]="pickupPlace" clearInput placeholder="Enter pick up place"></ion-input>
+</ion-item>
+
+<!---========================Add pickup button=====================-->
+<div class="button-container-seller">
+  <button (click)="addPickupLocation2()" round small ion-button class="button" color="button">Add pickup location </button>
+</div>
+</div>
+
+<!---========================Alert box=====================-->
+<!--<ion-card class="alert">
+  <ion-card-content>
+    <h3><ion-icon item-left name="md-alert"></ion-icon>&nbsp;&nbsp; Please fill in Pick Up Time </h3>
+  </ion-card-content>
+</ion-card>-->
+
+
+<!---========================Add pickup time=====================-->
+<ion-list radio-group no-lines mode="wp" >
+  <ion-item-divider color="light"><h2 style="font-weight:bold">Pickup Time</h2></ion-item-divider>
+      <ion-item no-lines  mode="wp" style="margin-right:-10px" *ngFor="let location of locations">
+        <h2 style=" width:40%"  item-left>{{location.venue}} : </h2>
+        <ion-input style=" width:60%"  mode="wp" placeholder="6.00pm-6.30pm"></ion-input>
+      </ion-item>
 </ion-list>
+</ion-list>
+<!--=============================Until from here================================-->
+
+
 <div class="buttonContainer">
-  <button ion-button class="button" color="button">Sell Food </button>
+  <button ion-button class="button" color="button" round>Sell Food </button>
 </div>
 
 </ion-content>
