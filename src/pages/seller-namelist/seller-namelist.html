@@ -61,9 +61,9 @@
       
       <!--<h3 item-right style="background:green; padding:5px; border-radius:5px; color:white; margin:5px"> 1A : more rice, less vege </h3>
       <h3 item-right style="background:green; padding:5px; border-radius:5px; color:white; margin:5px"> 2A </h3>-->
-      <p ><b> 1A </b>: more rice </p>
-      <p ><b> 2A </b>: more vege </p>
-      <p ><b> 3A </b>: less rice </p>
+      <p class="quantity"><b> 1A </b>: more rice </p>
+      <p class="quantity"><b> 2A </b>: more vege </p>
+      <p class="quantity"><b> 3A </b>: less rice </p>
       
 
       <!--<div class="quantity">
@@ -78,14 +78,15 @@
     </ion-item>
 
     <ion-item-options side="right">
-      <button ion-button color="primary">
-        <ion-icon name="text"></ion-icon>
-        Paid
-      </button>
-      <button ion-button color="secondary">
-        <ion-icon name="call"></ion-icon>
+      <button ion-button color="danger">
+        <ion-icon name="md-close"></ion-icon>
         Cancel
       </button>
+      <button ion-button color="button">
+        <ion-icon name="md-checkmark"></ion-icon>
+        Paid
+      </button>
+      
     </ion-item-options>
   </ion-item-sliding>
 
@@ -119,14 +120,15 @@
     </ion-item>
 
     <ion-item-options side="right">
-      <button ion-button color="primary">
-        <ion-icon name="text"></ion-icon>
-        Paid
-      </button>
-      <button ion-button color="secondary">
-        <ion-icon name="call"></ion-icon>
+      <button ion-button color="danger">
+        <ion-icon name="md-close"></ion-icon>
         Cancel
       </button>
+      <button ion-button color="button">
+        <ion-icon name="md-checkmark"></ion-icon>
+        Paid
+      </button>
+      
     </ion-item-options>
   </ion-item-sliding>
 
@@ -152,16 +154,19 @@
       </div>
     </ion-item>
 
-    <ion-item-options side="right">
-      <button ion-button color="primary">
-        <ion-icon name="text"></ion-icon>
-        Paid
-      </button>
-      <button ion-button color="secondary">
-        <ion-icon name="call"></ion-icon>
+   <ion-item-options side="right">
+      <button ion-button color="danger">
+        <ion-icon name="md-close"></ion-icon>
         Cancel
       </button>
+      <button ion-button color="button">
+        <ion-icon name="md-checkmark"></ion-icon>
+        Paid
+      </button>
+      
     </ion-item-options>
+
+    
   </ion-item-sliding>
 
   

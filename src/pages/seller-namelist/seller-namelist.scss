@@ -3,7 +3,7 @@ page-seller-namelist {
 
     
         #locationToolbar{
-            margin-top: -20px; 
+            margin-top: -10px; 
             z-index:-999;
 
          
@@ -19,7 +19,7 @@ page-seller-namelist {
 }
 
 .item-right2 {
-    // width : 60%;
+    width : 100%;
     // margin-left:-150px;
     text-align:left;
     // text-justify: tr
@@ -31,8 +31,9 @@ page-seller-namelist {
 }
 
 .quantity {
-    background: green;
-    padding: 5px;
+    // color: color($colors, button);
+    color: #008B00;
+    // padding: 5px;
 }
 
 

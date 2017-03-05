@@ -1,4 +1,29 @@
+
+
+
+.md {
 page-food {
+
+        #locationToolbar2{
+            margin-top: -13px; 
+            z-index:-500;
+         
+                ion-segment-button{
+                 margin-bottom:-15px;
+            }
+
+        }
+
+        #locationToolbar3{
+            margin-top: -13px; 
+            z-index:-999;
+
+                ion-segment-button{
+                 margin-bottom:-14px;
+            }
+        }
+
+}
 
 .foodName{
     font-weight:600; 

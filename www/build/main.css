@@ -18361,7 +18361,7 @@ ion-segment {
   padding: 0 6px;
   width: 0;
   height: 4.2rem;
-  border-bottom-width: 2px;
+  border-bottom-width: 4px;
   border-bottom-style: solid;
   border-bottom-color: rgba(0, 0, 0, 0.1);
   font-size: 1.2rem;
@@ -33016,7 +33016,6 @@ sub {
   background-color: white;
   padding-bottom: 10px;
   padding-top: 10px;
-  border-top: 1px solid lightgray;
 }
 
 .buttonContainer .button {
@@ -33040,11 +33039,29 @@ page-basket #totalPrice {
   border-top: 1px solid lightgray;
 }
 
-page-food .foodName {
+.md page-food #locationToolbar2 {
+  margin-top: -13px;
+  z-index: -500;
+}
+
+.md page-food #locationToolbar2 ion-segment-button {
+  margin-bottom: -15px;
+}
+
+.md page-food #locationToolbar3 {
+  margin-top: -13px;
+  z-index: -999;
+}
+
+.md page-food #locationToolbar3 ion-segment-button {
+  margin-bottom: -14px;
+}
+
+.md .foodName {
   font-weight: 600;
 }
 
-page-food #orderDate {
+.md #orderDate {
   padding-bottom: 15px;
 }
 
@@ -33155,7 +33172,7 @@ page-seller-infos .buttonContainer .button {
 }
 
 .md page-seller-namelist #locationToolbar {
-  margin-top: -20px;
+  margin-top: -10px;
   z-index: -999;
 }
 
@@ -33168,6 +33185,7 @@ page-seller-infos .buttonContainer .button {
 }
 
 .md page-seller-namelist .item-right2 {
+  width: 100%;
   text-align: left;
 }
 
@@ -33176,8 +33194,7 @@ page-seller-infos .buttonContainer .button {
 }
 
 .md page-seller-namelist .quantity {
-  background: green;
-  padding: 5px;
+  color: #008B00;
 }
 
 page-sell-food .button-container-seller {
